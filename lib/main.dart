@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'MyScaffold.dart';
 import 'MyText.dart';
+import 'MyAppBar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Mytext(),
+      home: const MyAppBar(),
     );
   }
 }
