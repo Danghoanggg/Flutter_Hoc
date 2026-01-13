@@ -19,17 +19,40 @@ class Mytext extends StatelessWidget {
             children: [
               TextSpan(
                 text:
-                    ''' Hãy bắt đầu bằng một nụ cười, một tách cà phê thơm nồng và một tâm thế sẵn sàng đón nhận những điều bất ngờ''',
+                    ''' Hãy bắt đầu bằng một nụ cười, một tách cà phê thơm nồng và một tâm thế sẵn sàng đón nhận những điều bất ngờ.''',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
-                  color: Colors.black.withOpacity(0.1),
+                  color: Colors.black.withOpacity(0.3),
                 ),
               ),
               TextSpan(
+                text: ' Lỗi nè ',
+                style: TextStyle(
+                  color: Colors.black,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.redAccent,
+                  decorationStyle: TextDecorationStyle.wavy,
+                  fontSize: 20,
+                ),
+              ),
+              WidgetSpan(
+                child: Text(
+                  'Xin chen giữa chút nha ! ',
+                  style: TextStyle(
+                    fontSize: 22,
+                    foreground: Paint()
+                      ..style = PaintingStyle.stroke
+                      ..strokeWidth = 6
+                      ..color = const Color.fromARGB(255, 41, 173, 255)!,
+                  ),
+                ),
+              ),
+
+              TextSpan(
                 text:
-                    '''Hãy nhớ rằng, những bước đi nhỏ bé nhưng kiên trì ngày hôm nay sẽ là nền tảng cho những thành công rực rỡ vào ngày mai''',
-                style: TextStyle(fontStyle: FontStyle.italic),
+                    ''' Hãy nhớ rằng, những bước đi nhỏ bé nhưng kiên trì ngày hôm nay sẽ là nền tảng cho những thành công rực rỡ vào ngày mai''',
+                style: TextStyle(fontStyle: FontStyle.italic, fontSize: 20),
               ),
             ],
           ),
